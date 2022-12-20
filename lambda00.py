@@ -1,6 +1,6 @@
-nome_completo = str(input('Informe o seu nome completo: ')).title().strip()
-primeiro_nome = lambda nome: nome.split()[0]
-ultimo_nome = lambda nome: nome.split()[-1]
+# Desenvolva um programa que leia o seu nome completo e que apresente somente o seu primeiro e último nomes
 
-print(f'Seu primeiro nome é {primeiro_nome(nome_completo)} '
-      f'e o seu último nome é {ultimo_nome(nome_completo)}')
+nome = str(input('Nome: '))
+pn = lambda n: nome.split()[0]
+un = lambda n: nome.split()[-1]
+print(f'Primeiro nome é {pn(nome)}, último nome é {un(nome)}')
